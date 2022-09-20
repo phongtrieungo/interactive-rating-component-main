@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --light-grey: hsl(217, 12%, 63%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --dark-blue: hsl(213, 19%, 18%);
+    --more-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: var(--more-dark-blue);
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 20px;
+    background-color: var(--dark-blue);
+    max-width: 330px;
+    border-radius: 10px;
+}
+
+.card .title {
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.card .description {
+    color: var(--light-grey);
+    margin-top: 15px;
+}
+
+.card .ratings {
+    list-style: none;
+    display: flex;
+    margin: 25px 0;
+    justify-content: space-between;
+}
+
+.card .ratings .item {
+    width: 50px;
+    height: 50px;
+    color: var(--white);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: var(--more-dark-blue);
+}
+
+.card .icon-container {
+    margin-bottom: 20px;
+}
+
+.card .icon-container .icon {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--medium-grey);
+    padding: 10px;
+}
+
+.card .ratings .item:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.btn {
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+}
+
+.btn-primary {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.ratings .item.active {
+    background-color: var(--light-grey);
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-primary {
+    color: var(--orange);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-light-gray {
+    color: var(--light-grey);
+}
+
+.border-round {
+    border-radius: 15px;
+}
+
+.bg-medium-gray {
+    background-color: var(--medium-grey);
+}
+
+.rating-result {
+    padding: 5px;
+    margin: 30px 0;
+}
+
+.font-size-large {
+    font-size: 1.5rem;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.margin-top-bottom {
+    margin: 20px 0;
+}
+
+.hide {
+    display: none;
+}
